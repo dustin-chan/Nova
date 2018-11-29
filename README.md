@@ -1,1 +1,0 @@
-# Hopalong-Attractor-Fractal-Visualizer
