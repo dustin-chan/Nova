@@ -1,11 +1,42 @@
+body {
+  background-color: black;
+  /* font-family: 'Iceland', cursive; */
+  overflow: hidden;
+}
+
+#title {
+  margin-bottom: 5px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #e7d3fd;
+}
+
 .stats {
     position: absolute;
-    top: 5px;
+    top: 10px !important;
     left: 0px;
     cursor: pointer;
     opacity: 0.9;
     z-index: 10000;
-    right: 5px;
+    right: 10px;
     display: flex;
     justify-content: flex-end;
+}
+
+#info {
+  margin-top: 5px;
+    color: #e7e9d9;
+    position: absolute;
+    top: 0px; width: 100%;
+    padding: 5px;
+    text-align: center;
+}
+
+form {
+  background-color: white;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
