@@ -13,8 +13,7 @@ body {
 
 .stats {
     position: absolute;
-    top: 10px !important;
-    left: 0px;
+    top: 10px;
     cursor: pointer;
     opacity: 0.9;
     z-index: 10000;
@@ -34,8 +33,9 @@ body {
 
 form {
   background-color: white;
+  opacity: 0.9;
   width: 100px;
-  height: 100px;
+  height: 100%;
   position: absolute;
   bottom: 0;
   right: 0;
