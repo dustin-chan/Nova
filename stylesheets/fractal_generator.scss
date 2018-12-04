@@ -2,7 +2,6 @@ body {
   background-color: black;
   font-family: 'Iceland', cursive;
   display: flex;
-  flex-direction: column;
   overflow: hidden;
 }
 
@@ -43,12 +42,16 @@ body {
 }
 
 #stats {
-    position: absolute;
+    align-self: right;
     top: 10px;
+    right: 10.75%;
     cursor: pointer;
     opacity: 0.9;
-    z-index: 10000;
-    right: 10px;
+}
+
+#about {
+  width: 10%;
+  height: 100vh;
 }
 
 #info {
@@ -70,9 +73,9 @@ body {
 #form {
   background-color: white;
   opacity: 0.5;
-  width: 300px;
-  height: 100%;
-  position: fixed;
+  width: 10%;
+  height: 100vh;
+  position: relative;
   bottom: 0;
   right: 0;
   display: flex;
@@ -80,7 +83,7 @@ body {
 }
 
 .min-max {
-  margin-top: 25px;
+  margin-top: 2vh;
   align-self: center;
   width: 80%;
 }
