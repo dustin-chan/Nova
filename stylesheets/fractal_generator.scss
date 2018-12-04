@@ -1,12 +1,14 @@
 body {
   background-color: black;
   font-family: 'Iceland', cursive;
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
 }
 
 #first-header-letter {
   margin: 0 3px 5px 3px;
-  font-family: 'Sacred';
+  font-family: 'Sacred Geometry';
   font-size: 28px;
   animation-name: header-letter;
   animation-duration: 30s;
@@ -15,7 +17,7 @@ body {
 
 #second-header-letter {
   margin: 0 3px 5px 3px;
-  font-family: 'Sacred';
+  font-family: 'Sacred Geometry';
   font-size: 28px;
   animation-name: header-letter;
   animation-duration: 26s;
@@ -24,7 +26,7 @@ body {
 
 #third-header-letter {
   margin: 0 3px 5px 3px;
-  font-family: 'Sacred';
+  font-family: 'Sacred Geometry';
   font-size: 28px;
   animation-name: header-letter;
   animation-duration: 25s;
@@ -33,7 +35,7 @@ body {
 
 #fourth-header-letter {
   margin: 0 3px 5px 3px;
-  font-family: 'Sacred';
+  font-family: 'Sacred Geometry';
   font-size: 28px;
   animation-name: header-letter;
   animation-duration: 31s;
@@ -53,11 +55,13 @@ body {
 
 #info {
   margin-top: 5px;
-    color: #e7e9d9;
-    position: absolute;
-    top: 0px; width: 100%;
-    padding: 5px;
-    text-align: center;
+  align-self: center;
+  width: 300px;
+  color: #e7e9d9;
+  position: absolute;
+  top: 0px;
+  padding: 5px;
+  text-align: center;
 }
 
 #info ul {
@@ -65,18 +69,26 @@ body {
   justify-content: center;
 }
 
-form {
+#form {
   background-color: white;
   opacity: 0.5;
-  width: 100px;
+  width: 300px;
   height: 100%;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   right: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.min-max {
+  margin-top: 25px;
+  align-self: center;
+  width: 80%;
 }
 
 @font-face {
-  font-family: Sacred;
+  font-family: Sacred Geometry;
   src: url("../assets/Sacred.ttf") format("truetype");
 }
 
