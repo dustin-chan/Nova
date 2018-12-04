@@ -42,15 +42,13 @@ body {
   animation-iteration-count: infinite;
 }
 
-.stats {
+#stats {
     position: absolute;
     top: 10px;
     cursor: pointer;
     opacity: 0.9;
     z-index: 10000;
     right: 10px;
-    display: flex;
-    justify-content: flex-end;
 }
 
 #info {
