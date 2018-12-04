@@ -5,7 +5,7 @@ body {
 }
 
 #first-header-letter {
-  margin: 5px 3px 5px 3px;
+  margin: 0 3px 5px 3px;
   font-family: 'Sacred';
   font-size: 28px;
   animation-name: header-letter;
@@ -14,7 +14,16 @@ body {
 }
 
 #second-header-letter {
-  margin: 5px 3px 5px 3px;
+  margin: 0 3px 5px 3px;
+  font-family: 'Sacred';
+  font-size: 28px;
+  animation-name: header-letter;
+  animation-duration: 26s;
+  animation-iteration-count: infinite;
+}
+
+#third-header-letter {
+  margin: 0 3px 5px 3px;
   font-family: 'Sacred';
   font-size: 28px;
   animation-name: header-letter;
@@ -22,35 +31,8 @@ body {
   animation-iteration-count: infinite;
 }
 
-#third-header-letter {
-  margin: 5px 3px 5px 3px;
-  font-family: 'Sacred';
-  font-size: 28px;
-  animation-name: header-letter;
-  animation-duration: 20s;
-  animation-iteration-count: infinite;
-}
-
 #fourth-header-letter {
-  margin: 5px 3px 5px 3px;
-  font-family: 'Sacred';
-  font-size: 28px;
-  animation-name: header-letter;
-  animation-duration: 21s;
-  animation-iteration-count: infinite;
-}
-
-#fifth-header-letter {
-  margin: 5px 3px 5px 3px;
-  font-family: 'Sacred';
-  font-size: 28px;
-  animation-name: header-letter;
-  animation-duration: 24s;
-  animation-iteration-count: infinite;
-}
-
-#sixth-header-letter {
-  margin: 5px 3px 5px 3px;
+  margin: 0 3px 5px 3px;
   font-family: 'Sacred';
   font-size: 28px;
   animation-name: header-letter;
