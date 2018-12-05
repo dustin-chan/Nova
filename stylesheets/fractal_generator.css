@@ -1,6 +1,6 @@
 body {
   background-color: black;
-  font-family: 'Iceland', cursive;
+  font-family: 'Iceland';
   display: flex;
   overflow: hidden;
 }
@@ -94,6 +94,11 @@ body {
 @font-face {
   font-family: Sacred Geometry;
   src: url("../assets/Sacred.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Iceland;
+  src: url("../assets/Iceland-Regular.ttf") format("truetype");
 }
 
 @keyframes header-letter {
