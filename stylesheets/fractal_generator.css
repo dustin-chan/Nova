@@ -120,8 +120,8 @@ h3 {
 }
 
 .min-max::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
+  -webkit-appearance: none !important;
+  appearance: none !important;
   width: 18px;
   height: 18px;
   background: url('../assets/dna.png');
@@ -138,7 +138,6 @@ h3 {
   background: url('../assets/dna.png');
   animation: slider-background 20s infinite;
   border-radius: 50%;
-  background-color: red;
   background-repeat: no-repeat;
   background-size: contain;
   cursor: pointer;
