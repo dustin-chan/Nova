@@ -117,6 +117,8 @@ h3 {
 }
 
 .min-max::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
   width: 18px;
   height: 18px;
   background: url('../assets/dna.png');
