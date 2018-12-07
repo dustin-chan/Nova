@@ -105,7 +105,8 @@ h3 {
   outline: black;
   padding: 0 0.25% 0 0.25%;
   align-self: center;
-  background: rgba(220, 220, 229, 0.15);
+  /* background: rgba(220, 220, 229, 0.15); */
+  animation: slider 60s infinite;
   border-radius: 12.5px;
   min-height: 20px;
 }
@@ -195,6 +196,14 @@ input[type=range] {
   71.5%   { color: green }
   85.8%   { color: blue }
   100%    { color: indigo }
+}
+
+@keyframes slider {
+  0%    { background-color: rgba(221, 74, 251, 0.25) }
+  25%   { background-color: rgba(255, 94, 134, 0.25) }
+  50%   { background-color: rgba(19, 255, 238, 0.25) }
+  75%   { background-color: rgba(107, 255, 108, 0.25) }
+  100%  { background-color: rgba(221, 74, 251, 0.25) }
 }
 
 @keyframes about-header {
