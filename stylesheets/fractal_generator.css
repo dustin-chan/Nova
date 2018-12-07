@@ -58,86 +58,79 @@ h3 {
 }
 
 #stats {
-    margin-top: 2%;
-    top: 0;
-    right: 18%;
+  margin-top: 2%;
+  top: 0;
+  right: 18%;
 }
 
 #info {
-  align-self: center;
-  position: absolute;
   max-width: 20%;
-  max-height: 80%;
-  overflow-y: auto;
+  align-self: center;
   background-color: rgba(0, 0, 0, .7);
+}
+
+.scrollable {
   top: 0px;
+  max-height: 90%;
+  overflow-y: auto;
   margin: 2%;
-  padding: 1.5%;
   box-sizing: border-box;
+  padding: 1.5%;
   border-radius: 2vh;
+  position: absolute;
+  background-color: rgba(0, 0, 0, .7);
 }
 
-#info::-webkit-scrollbar {
-  color: black;
-  height: 100%;
-  width: 1em;
-  border-radius: 0 2vh 2vh 0;
+.scrollable::-webkit-scrollbar {
+  /* color: rgb(255, 255, 255); */
+  opacity: 0.25;
+  width: 2px;
 }
 
-#info::-webkit-scrollbar-track {
-  background-color: black;
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-}
-
-#info::-webkit-scrollbar-thumb {
-  background-color: black;
-  outline: 1px solid black;
+.scrollable::-webkit-scrollbar-thumb {
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 #form {
-  box-sizing: border-box;
-  margin: 2%;
-  padding: 1.5%;
-  background-color: rgba(0, 0, 0, .7);
   width: 15%;
-  /* height: 92vh; */
-  position: absolute;
-  top: 0;
   right: 0;
   display: flex;
   flex-direction: column;
-  border-radius: 2vh;
 }
 
 .min-max {
-  /* margin-top: 2vh; */
+  margin-top: 1vh;
   width: 100%;
-  margin-top: 2vh;
+  outline: black;
   padding: 0 0.25% 0 0.25%;
   align-self: center;
   background: rgba(220, 220, 229, 0.15);
   border-radius: 12.5px;
-  height: 20px;
+  min-height: 20px;
 }
 
 .min-max::-webkit-slider-thumb {
-  -webkit-appearance: none !important;
-  appearance: none !important;
+  -webkit-appearance: none;
   width: 18px;
   height: 18px;
   background: url('../assets/dna.png');
-  animation: slider-background 20s infinite;
+  border: 1px solid white;
   border-radius: 50%;
   background-repeat: no-repeat;
   background-size: contain;
   cursor: pointer;
 }
 
+input[type=range] {
+  -webkit-appearance: none;
+}
+
 .min-max::-moz-range-thumb {
   width: 18px;
   height: 18px;
   background: url('../assets/dna.png');
-  animation: slider-background 20s infinite;
+  animation: slider-border 20s infinite;
   border-radius: 50%;
   background-repeat: no-repeat;
   background-size: contain;
@@ -154,15 +147,15 @@ h3 {
   src: url("../assets/Iceland-Regular.ttf") format("truetype");
 }
 
-@keyframes slider-background {
-  0%      { background-color: red }
-  14.3%   { background-color: orange }
-  28.6%   { background-color: yellow }
-  42.9%   { background-color: green }
-  57.2%   { background-color: blue }
-  71.5%   { background-color: indigo }
-  85.8%   { background-color: violet }
-  100%    { background-color: red }
+@keyframes slider-border {
+  0%      { border: 1px solid red }
+  14.3%   { border: 1px solid orange }
+  28.6%   { border: 1px solid yellow }
+  42.9%   { border: 1px solid green }
+  57.2%   { border: 1px solid blue }
+  71.5%   { border: 1px solid indigo }
+  85.8%   { border: 1px solid violet }
+  100%    { border: 1px solid red }
 }
 
 @keyframes header-letter {
