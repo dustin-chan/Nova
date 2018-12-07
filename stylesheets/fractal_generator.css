@@ -82,7 +82,6 @@ h3 {
 }
 
 .scrollable::-webkit-scrollbar {
-  /* color: rgb(255, 255, 255); */
   opacity: 0.25;
   width: 2px;
 }
@@ -130,11 +129,26 @@ input[type=range] {
   width: 18px;
   height: 18px;
   background: url('../assets/dna.png');
-  animation: slider-border 20s infinite;
+  border: 1px solid white;
   border-radius: 50%;
   background-repeat: no-repeat;
   background-size: contain;
   cursor: pointer;
+}
+
+#boom {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  z-index: 100;
+  font-size: 4px;
+  text-align: center;
+  color: transparent;
+}
+
+#boom:hover {
+  animation: boom 7s infinite;
 }
 
 @font-face {
@@ -145,17 +159,6 @@ input[type=range] {
 @font-face {
   font-family: Iceland;
   src: url("../assets/Iceland-Regular.ttf") format("truetype");
-}
-
-@keyframes slider-border {
-  0%      { border: 1px solid red }
-  14.3%   { border: 1px solid orange }
-  28.6%   { border: 1px solid yellow }
-  42.9%   { border: 1px solid green }
-  57.2%   { border: 1px solid blue }
-  71.5%   { border: 1px solid indigo }
-  85.8%   { border: 1px solid violet }
-  100%    { border: 1px solid red }
 }
 
 @keyframes header-letter {
@@ -199,4 +202,47 @@ input[type=range] {
   50%   { color: #ff5e86 }
   75%   { color: #13ffee }
   100%  { color: #6bff6c }
+}
+
+@keyframes boom {
+  0%      {
+    background-color: red;
+    color: green;
+    transform: scale(1);
+  }
+  14.3%   {
+    background-color: orange;
+    color: blue;
+    transform: scale(4) rotate(45deg);
+  }
+  28.6%   {
+    background-color: yellow;
+    color: indigo;
+    transform: scale(0) rotate(140deg) rotateX(120deg);
+  }
+  42.9%   {
+    background-color: green;
+    color: violet;
+    transform: scale(3) rotate(160deg) rotateZ(180deg);
+  }
+  57.2%   {
+    background-color: blue;
+    color: red;
+    transform: scale(0) rotate(360deg) rotateX(120deg);
+  }
+  71.5%   {
+    background-color: indigo;
+    color: orange;
+    transform: scale(5) rotate(270deg) rotateY(-270deg);
+  }
+  85.8%   {
+    background-color: violet;
+    color: yellow;
+    transform: scale(0) rotate(180deg) rotateZ(180deg);
+  }
+  100%    {
+    background-color: red;
+    color: green;
+    transform: scale(1);
+  }
 }
