@@ -137,6 +137,7 @@ input[type=range] {
 }
 
 #boom {
+  cursor: crosshair;
   position: absolute;
   width: 15px;
   height: 15px;
@@ -148,6 +149,7 @@ input[type=range] {
 }
 
 #boom:hover {
+  cursor: crosshair;
   animation: boom 7s infinite;
 }
 
