@@ -138,7 +138,7 @@ input[type=range] {
 }
 
 .form-label {
-  margin-top: 10px;
+  margin-top: 5px;
   color: whitesmoke;
   width: 100%;
   text-align: center;
@@ -153,6 +153,26 @@ input[type=range] {
 
 .range-value {
   color: darkgrey;
+}
+
+#aMax-label {
+  margin-top: 30px;
+}
+
+#bMax-label {
+  margin-top: 30px;
+}
+
+#cMax-label {
+  margin-top: 30px;
+}
+
+#dMax-label {
+  margin-top: 30px;
+}
+
+#eMax-label {
+  margin-top: 30px;
 }
 
 #speed-label {
