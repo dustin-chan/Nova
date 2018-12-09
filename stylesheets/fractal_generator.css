@@ -60,14 +60,48 @@ h3 {
 #stats {
   margin-top: 2%;
   top: 0;
-  right: 18%;
+  right: 3.5%;
 }
 
-#info {
-  padding: 1.5%;
-  max-width: 20%;
+#show-about-button {
+  position: absolute;
+  font-size: 16px;
+  margin: 2% 0 0 3.5%;
+  animation: about-header 30s infinite;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+#hide-about-button {
+  position: absolute;
+  margin: 2.5% 0 0 20%;
+  color: grey;
+  z-index: 100;
+}
+
+#show-form-button {
+  position: absolute;
+  font-size: 16px;
+  right: 3.5%;
+  margin-right: 100px;
+  margin-top: 2%;
+  animation: controls-header 30s infinite;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+#hide-form-button {
+  position: absolute;
+  right: 3.5%;
+  margin-top: 2.5%;
+  color: grey;
+  z-index: 102;
+}
+
+#about {
+  padding: 1% 1.5% 1.5% 1.5%;
+  width: 20%;
   align-self: center;
-  background-color: rgba(0, 0, 0, .7);
 }
 
 .scrollable {
@@ -78,7 +112,7 @@ h3 {
   box-sizing: border-box;
   border-radius: 2vh;
   position: absolute;
-  background-color: rgba(0, 0, 0, .7);
+  background-color: rgba(0, 0, 0, .5);
 }
 
 .scrollable::-webkit-scrollbar {
@@ -95,7 +129,7 @@ h3 {
   padding: 1% 1.5% 1.5% 1.5%;
   width: 15%;
   right: 0;
-  display: flex;
+  /* display: none; */
   flex-direction: column;
 }
 
