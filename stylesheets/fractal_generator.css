@@ -189,6 +189,18 @@ input[type=range] {
   color: darkgrey;
 }
 
+.links {
+  display: flex;
+  justify-content: space-around;
+}
+
+.link {
+  width: 30px;
+  height: 30px;
+  filter: invert(1);
+  opacity: 0.5;
+}
+
 #aMax-label {
   margin-top: 30px;
 }

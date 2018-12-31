@@ -12,9 +12,6 @@
 		<link rel=stylesheet type="text/css" href="./stylesheets/fractal_generator.css"></link>
 	</head>
 	<body>
-		<!-- <div id="about">
-
-		</div> -->
 		<button id="show-about-button">About</button>
 		<button id="hide-about-button" style="display: none;">X</button>
 
@@ -38,13 +35,18 @@
 			<h3 id="about">About</h3>
 			<br>
 			<p class="about">
-				This work was inspired by the Google Experiment made by Iacopo Sassarini in 2011.
+				Nova was made using THREE.js and WebGL.
 				<br>
 				<br>
-				The Hopalong Attractor algorithm developed by Barry Martin is used to to generate fractal point maps.
+				The following modification of the Hopalong Attractor formula is used to generate fractal point maps:
 				<br>
 				<br>
-				The visualizer then renders these maps in 3D space using THREE.js
+				x = y + (d + (|b * x - c|)^exponent) + e
+				<br>
+				y = a - x
+				<br>
+				<br>
+				This work was inspired by the Google Experiment made by Iacopo Sassarini.
 				<br>
 			</p>
 			<br>
@@ -61,6 +63,17 @@
 				<li>[P] Toggle parameters</li>
 				<li>[H] Toggle display</li>
 			</ul>
+			<br>
+			<br>
+			<div class="links">
+				<a href="https://github.com/dustin-chan">
+					<img src="./assets/github-icon.png" class="link"/>
+				</a>
+
+				<a href="https://www.linkedin.com/in/dustin-chan-47bb1616b/">
+					<img src="./assets/in-icon.png" class="link"/>
+				</a>
+			</div>
 		</div>
 	</body>
 </html>
