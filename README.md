@@ -34,16 +34,16 @@ In order to achieve realistic high-speed illusory movement (like car wheels on a
 it was necessary for me to use the modulo operator when resetting the position of the rendered planes.
 
 ```javascript
-      if ( orbitPos.z > nearPlane ) {
-        orbitPos.z = farPlane + ( orbitPos.z % nearPlane );
-      .
-      .
-      .
-      if ( orbitPos.z < nearPlane ) {
-        orbitPos.z = nearPlane + ( orbitPos.z % farPlane );
-      .
-      .
-      .
+if ( orbitPos.z > nearPlane ) {
+  orbitPos.z = farPlane + ( orbitPos.z % nearPlane );
+.
+.
+.
+if ( orbitPos.z < nearPlane ) {
+  orbitPos.z = nearPlane + ( orbitPos.z % farPlane );
+.
+.
+.
 ```
 
 ### Big Bang Animation
