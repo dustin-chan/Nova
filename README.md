@@ -52,26 +52,26 @@ In order to simulate a big bang the camera FOV starts at 180˚ and animates down
 I played around with different decrement methods to make the animation as smooth as possible.
 
 ```javascript 
-      function decrementFov(decrement) {
-        camera.fov -= decrement;
-        camera.updateProjectionMatrix();
-      }
+function decrementFov(decrement) {
+  camera.fov -= decrement;
+  camera.updateProjectionMatrix();
+}
 
-      function decrementFovToFinalFov() {
-        if ( camera.fov > finalFov * 2.5 ) {
-          decrementFov(0.3);
-        } else if (camera.fov > finalFov) {
-          decrementFov( (camera.fov * (camera.fov / 10))  / (360 * 36) );
-        } else {
-          clearInterval( fovDecrementInterval );
-          cosmicInception = false;
-        }
-      }
-      .
-      .
-      .
-      function animateNewSceneFov() {
-        fovDecrementInterval = setInterval( decrementFovToFinalFov, 6 );
-      }
+function decrementFovToFinalFov() {
+  if ( camera.fov > finalFov * 2.5 ) {
+    decrementFov(0.3);
+  } else if (camera.fov > finalFov) {
+    decrementFov( (camera.fov * (camera.fov / 10))  / (360 * 36) );
+  } else {
+    clearInterval( fovDecrementInterval );
+    cosmicInception = false;
+  }
+}
+.
+.
+.
+function animateNewSceneFov() {
+  fovDecrementInterval = setInterval( decrementFovToFinalFov, 6 );
+}
 ```
 
